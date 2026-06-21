@@ -52,9 +52,9 @@ nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap; /* Siempre en una sola línea */
+    flex-wrap: nowrap; 
     gap: 5px;
-    overflow-x: auto; /* Si no caben, permite desplazamiento horizontal */
+    overflow-x: auto; 
 }
 
 nav li{
@@ -67,7 +67,7 @@ nav a{
     padding: 8px 12px;
     border-radius: 20px;
     transition: 0.3s;
-    white-space: nowrap; /* Evita que el texto se divida */
+    white-space: nowrap; 
     font-size: clamp(12px, 2vw, 16px);
 }
 
@@ -175,4 +175,43 @@ footer p{
     width: 100%;
     border-radius: 10px;
     margin-top: 15px;
+}
+.volver-arriba{
+    display:block;
+    width:220px;
+    margin:30px auto;
+    text-align:center;
+    padding:12px;
+    background:#2e7d32;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+}
+
+.volver-arriba:hover{
+    background:#1b5e20;
+}
+.boton-video{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#d32f2f;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.boton-video:hover{
+    background:#b71c1c;
+}
+.video-link img{
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.video-link img:hover{
+    transform:scale(1.03);
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
 }

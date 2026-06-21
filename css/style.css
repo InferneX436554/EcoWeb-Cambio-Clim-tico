@@ -48,10 +48,13 @@ nav{
 }
 
 nav ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* Siempre en una sola línea */
+    gap: 5px;
+    overflow-x: auto; /* Si no caben, permite desplazamiento horizontal */
 }
 
 nav li{
@@ -59,11 +62,13 @@ nav li{
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    padding:10px 18px;
-    border-radius:20px;
-    transition:0.3s;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+    white-space: nowrap; /* Evita que el texto se divida */
+    font-size: clamp(12px, 2vw, 16px);
 }
 
 nav a:hover{
@@ -142,8 +147,8 @@ footer p{
     }
 
     nav a{
-        padding:8px 10px;
-        font-size:14px;
+        padding:6px 8px;
+        font-size:12px;
     }
 
     section{
